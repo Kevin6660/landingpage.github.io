@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio_Landing_page</title>
+    <script src="https://kit.fontawesome.com/0c90977169.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/contactenos.css">
+ 
+
+</head>
+
+<body>
+    <header class="fond_header">
+        <div class="social_networks">
+            <a href="#">
+                <i class="fa-brands fa-facebook" id="facebook"></i>
+            </a>        
+            <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+            </a>           
+            <a href="#">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+        </div> 
+        <div class="container_menu">
+            <div class="logo">
+                <img src="img/Logo_Final.png" alt="Logo de la empresa automatizame">
+            </div>
+            <div class="menu">
+                <i class="fa-solid fa-bars" id="btn_menu"></i>
+                <div id="back_menu"></div>
+                <nav id="nav_menu">
+                    <div class="logo_menu">
+                        <img src="img/Logo_Final.png" alt="Logotipo de la empresa">
+                    </div>
+                    <ul>
+                        <li><a href="/" id="selected">Inicio</a></li>
+                        <li><a href="acerca_de_.html">Acerca de</a></li>
+                        <li><a href="/contactenos.html">Contactenos</a></li>
+                        <button class="btn_beta" id="btn_enviar">BETA<i class="fa-solid fa-angle-right"></i></i></button>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <div class="container_cover">
+            <div class="cover"> <!--Portada-->
+                <div class="text_download">
+                    <h1>
+                        La mejor red social para tus mascotas
+                    </h1>
+                   
+                    <p>
+                        Sube historias, tomate fotos, comparte con tus amigos y seguidores, conoce mascotas cerca a tu zona, planea citas para jugar y compartir, todo lo que tu mascota necesita para socializar y compartir con su nuevo club de fans, aquí!!!  
+                   </p>
+                   <div class="download">
+                        <p>
+                            Descargar proximamente en:
+                        </p>
+                        <div class="dowload_btn">
+                            <a href="#">
+                                <img src="img/google_play.png" alt="Descagar desde google play">
+                            </a>
+                            <a href="#">
+                                <img src="img/app_store.png" alt="Descargar desde app store">
+                            </a>
+                        </div>
+                   </div>
+                </div>
+                <div class="vector_img">
+                    <img src="img/VECTOR-PAGINA-PERRITO.png" alt="Vector sobre el aplicativo">
+            </div>
+        </div>
+        <section class="container_modal">
+            <dialog class="content-modal" id="modal">
+                <h2>
+                    Quiero unirme para hacer parte de la prueba beta del app (NUN)
+                </h2>
+                <img src="/img/Logo_Final.png" alt="">
+                <h3 class="" >
+                    Email:
+                </h3>
+                <form class="form_fields" action="https://formsubmit.co/Juanpalacor@gmail.com" method="POST">
+                    <input type="email" name="email" class="form_input" id="form_input" value="" placeholder="Ejemplo@dominio.com" required="">
+                    <button class="btn_general" id="btn_cerrar">Unirme</button>
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html">
+                    <input type="hidden" name="_captcha" value="false">
+                </form>
+            </dialog>
+        </section>
+    </main>
+    <script src="/js/script.js"></script>
+    <script src="/js/modal.js"></script>
+</body>
+
+</html>

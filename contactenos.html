@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://kit.fontawesome.com/1327563671.js" crossorigin="anonymous"></script>
+    <title>Contactenos</title>
+    
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/acerca_de.css">
+    <link rel="stylesheet" href="css/contactenos.css">
+</head>
+<body class="background_color">  
+    <header class="fond_header--about">
+        <div class="social_networks">
+            <a href="#">
+                <i class="fa-brands fa-facebook"></i>
+            </a>        
+            <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+            </a>           
+            <a href="#">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+        </div> 
+        <div class="container_menu">
+            <div class="logo">
+                <img src="/img/Logo_Final.png" alt="Logo de la empresa Automatizame">
+            </div>
+            <div class="menu">
+                <i class="fa-solid fa-bars" id="btn_menu"></i>
+                <div id="back_menu"></div>
+                <nav id="nav_menu">
+                    <div class="logo_menu">
+                        <img src="/img/Logo_Final.png" alt="Logo de la aplicación">
+                    </div>
+                    <ul>
+                        <li><a href="/">Inicio</a></li>
+                        <li><a href="/acerca_de_.html" >Acerca de</a></li>
+                        <li><a href="/contactenos.html" id="selected">Contactenos</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="container_cover_about">
+            <div class="cover_about cover_about--background">
+                <div class="container_form">
+                    <h1 class="form_title">
+                        Contactenos
+                    </h1>
+                    
+                    <form class="form_fields" action="https://formsubmit.co/Juanpalacor@gmail.com" method="POST">
+                        <input type="text" class="form_input" name="nombre" placeholder="Nombre" required="">
+                        <input type="email" class="form_input" value="" placeholder="Email: Ejemplo@dominio.com" required="">
+                        <textarea name="Mensaje" id="form_mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                       <!--  <input type="button" id="btn_contact" value="Enviar Mensaje">-->
+                       <button class="btn_general" id="btn_enviar">Enviar mensaje</button>
+
+                       <input type="hidden" name="_next" value="http://127.0.0.1:5500/contactenos.html">
+                       <input type="hidden" name="_captcha" value="false">
+                    </form>     
+                    
+                   
+                </div>
+                <div class="vector_img_contact">
+                    <img src="img/VECTOR-PAGINA-PERRITO.png" alt="">
+                </div> 
+            </div>    
+        </section>
+        <section class="container-modal">
+            <div class="background_modal" >
+                
+            </div>
+            <dialog  class="content-modal" id="modal">
+                <h2 class="content-modal__title">¡Mensaje enviado!</h2>
+                <p class="content-modal__txt">Gracias por contactarnos.</p>
+                <p class="content-modal__txt">En el menor tiempo posible responderemos sus inquietudes.</p>
+                <button class="btn_general" id="btn_cerrar">Cerrar</button>
+            </dialog>
+        </section>
+    </main>
+    <footer class="main--footer">
+        <div class="container--flex">
+            <div class="column column--50">
+                <h2 class="column__title">Sobre nosotros</h2>
+                <p class="column__txt">
+                    La mejor red social para tus mascotas.
+                </p>
+                <p class="column__txt">
+                    Sube historias, tomate fotos, comparte con tus amigos y seguidores, conoce mascotas cerca a tu zona, entre otras cosas.
+                </p>
+            </div>
+            <div class="column column--50">
+                <h2 class="column__title">Contáctanos</h2>
+                <p class="column__txt">Dirección: Carrera 2G # 73-32 Coeducadores - Colombia</p>
+                <p class="column__txt">Telefono: 310 6195698</p>
+                <p class="column__txt">servicioalcliente@automatizame.com.co</p>
+            </div>
+        </div>
+        <p class="copy">@2022 Your app pets | Todos los derechos reservados</p>
+    </footer>
+        
+    
+    <script src="/js/modal.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+</html>
